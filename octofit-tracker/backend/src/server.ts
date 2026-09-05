@@ -15,6 +15,14 @@ const apiUrl = codespaceName
 
 app.use(express.json())
 
+app.get('/', (_request, response) => {
+  response.json({
+    name: 'OctoFit Tracker API',
+    apiUrl,
+    endpoints: ['/api/health', '/api/users', '/api/activities'],
+  })
+})
+
 app.get('/api/health', (_request, response) => {
   response.json({ status: 'ok', apiUrl })
 })
