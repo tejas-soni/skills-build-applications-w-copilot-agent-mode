@@ -1,0 +1,68 @@
+:root {
+  --ink: #17211c;
+  --muted: #65736b;
+  --paper: #f4f3ee;
+  --line: #d7dbd4;
+  --lime: #c7ef61;
+  --blue: #bfdcf4;
+  --orange: #f2a65a;
+}
+
+.app-shell { min-height: 100vh; background: var(--paper); color: var(--ink); }
+.app-header { align-items: center; border-bottom: 1px solid var(--line); display: flex; gap: 2rem; min-height: 76px; padding: 0 4vw; }
+.brand { align-items: center; color: var(--ink); display: flex; font-size: 1.25rem; font-weight: 800; gap: .55rem; letter-spacing: -.04em; text-decoration: none; }
+.brand-dot { align-items: center; background: var(--lime); border-radius: 50%; display: inline-flex; font-size: 1rem; height: 30px; justify-content: center; width: 30px; }
+.main-nav { display: flex; flex: 1; gap: 1.35rem; margin-left: 2rem; }
+.main-nav a { color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .04em; padding: 1.7rem 0 1.35rem; text-decoration: none; text-transform: uppercase; }
+.main-nav a.active, .main-nav a:hover { border-bottom: 3px solid var(--ink); color: var(--ink); }
+.status-pill { align-items: center; color: var(--muted); display: flex; font-size: .75rem; gap: .45rem; white-space: nowrap; }
+.status-pill span { background: #69bb71; border-radius: 50%; height: 7px; width: 7px; }
+.app-main { margin: 0 auto; max-width: 1280px; padding: 5rem 4vw; }
+.overview { display: grid; gap: 1px; grid-template-columns: 1.2fr .8fr; min-height: 65vh; }
+.overview-copy { align-content: center; background: var(--lime); display: flex; flex-direction: column; justify-content: center; padding: clamp(2rem, 6vw, 6rem); }
+.overview-copy h1 { color: var(--ink); font-size: clamp(3.4rem, 7vw, 6.7rem); font-weight: 800; letter-spacing: -.09em; line-height: .88; margin: .4rem 0 1.8rem; }
+.overview-copy h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.08em; }
+.lead { color: #3d4c40; font-size: 1.05rem; max-width: 30rem; }
+.overview-copy .btn { align-self: flex-start; margin-top: 2rem; }
+.overview-copy .btn span { font-size: 1.2rem; margin-left: .7rem; }
+.overview-aside { background: var(--blue); display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(2rem, 5vw, 5rem); }
+.overview-aside h2 { font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 800; letter-spacing: -.08em; line-height: .95; margin: .75rem 0 1.2rem; }
+.overview-aside p:last-child { color: #4d6875; max-width: 18rem; }
+.pulse-mark { align-items: center; border: 1px solid var(--ink); border-radius: 50%; display: flex; font-family: Georgia, serif; font-size: 4rem; height: 120px; justify-content: center; margin-bottom: auto; width: 120px; }
+.pulse-mark span { transform: rotate(-12deg); }
+.eyebrow { font-size: .7rem; font-weight: 800; letter-spacing: .16em; margin: 0; text-transform: uppercase; }
+.quick-links { align-items: center; background: var(--ink); color: #dce7dc; display: flex; gap: 2rem; grid-column: 1 / -1; padding: 1.25rem 2rem; }
+.quick-links > span { color: #8ea094; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; }
+.quick-links a { color: white; flex: 1; font-size: .9rem; text-decoration: none; }
+.quick-links a span { color: var(--lime); float: right; }
+.page-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 2rem; }
+.page-heading h1 { font-size: clamp(2.7rem, 5vw, 5rem); font-weight: 800; letter-spacing: -.08em; line-height: .9; margin: .45rem 0 0; }
+.count-badge { border: 1px solid var(--line); color: var(--muted); font-size: .75rem; padding: .55rem .8rem; }
+.surface { background: #fff; border: 1px solid var(--line); }
+.table { --bs-table-bg: transparent; --bs-table-color: var(--ink); font-size: .88rem; }
+.table thead th { color: var(--muted); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+.table > :not(caption) > * > * { border-bottom-color: var(--line); padding: 1.15rem 1.25rem; }
+.resource-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.resource-card { min-height: 210px; padding: 1.5rem; }
+.resource-card h2, .user-card h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -.05em; margin: 1rem 0 .5rem; }
+.resource-card p, .user-card p { color: var(--muted); font-size: .88rem; }
+.resource-card footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; margin-top: 1.4rem; padding-top: 1rem; }
+.resource-card footer span { float: right; }
+.team-mark { align-items: center; background: var(--orange); display: flex; font-size: .8rem; font-weight: 800; height: 42px; justify-content: center; width: 42px; }
+.user-card { align-items: center; display: flex; flex-wrap: wrap; gap: 1rem; padding: 1.5rem; }
+.user-card h2 { margin: 0; }
+.user-card p { margin: .15rem 0 0; }
+.avatar { align-items: center; background: var(--blue); border-radius: 50%; color: var(--ink); display: flex; flex: 0 0 auto; font-size: .72rem; font-weight: 800; height: 38px; justify-content: center; width: 38px; }
+.avatar-large { background: var(--lime); height: 54px; width: 54px; }
+.goals { border-top: 1px solid var(--line); display: flex; flex-basis: 100%; flex-wrap: wrap; gap: .4rem; padding-top: 1rem; }
+.goals span, .category-label { background: var(--paper); color: var(--muted); font-size: .7rem; padding: .35rem .5rem; }
+.workout-top { color: var(--muted); display: flex; font-size: .75rem; justify-content: space-between; }
+.category-label { background: var(--lime); color: var(--ink); font-weight: 700; }
+.workout-card ul { color: var(--muted); font-size: .8rem; margin: 1.2rem 0 0; padding-left: 1rem; }
+.rank-list { display: grid; gap: .65rem; }
+.rank-row { align-items: center; display: flex; gap: 1rem; padding: 1rem 1.25rem; }
+.rank-number { color: #98a49c; font-family: Georgia, serif; font-size: 1.25rem; width: 2rem; }
+.rank-copy { display: flex; flex: 1; flex-direction: column; gap: .2rem; }
+.rank-copy small, .points small { color: var(--muted); font-size: .7rem; font-weight: 400; }
+.points { font-size: 1.25rem; }
+@media (max-width: 800px) { .app-header { flex-wrap: wrap; gap: 1rem; padding: 1rem 5vw 0; } .main-nav { flex-basis: 100%; gap: 1rem; margin-left: 0; overflow-x: auto; } .main-nav a { padding: .5rem 0 1rem; white-space: nowrap; } .status-pill { margin-left: auto; position: absolute; right: 5vw; top: 1.4rem; } .app-main { padding: 2.5rem 5vw; } .overview { grid-template-columns: 1fr; } .quick-links { grid-column: auto; flex-wrap: wrap; gap: 1rem; } .resource-grid { grid-template-columns: 1fr; } }
